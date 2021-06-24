@@ -1,0 +1,142 @@
+.container-navbar{
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	z-index: 1;
+	width: 100%;
+	padding: 20px 30px;
+	display: flex;
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+	/*overflow: hidden;*/
+	height: 3.5em;
+	min-height: 0vh;
+	transition: all 400ms;
+}
+.container-logo{
+	flex-basis: 80%;
+}
+.container-logo h1{
+	display: flex;
+	align-items: center;
+	height: 22px;
+	flex-basis: 80%;
+}
+.container-logo span{
+	display: block;
+	animation: wave 2s infinite alternate;
+}
+.container-logo span:nth-child(1){
+	width: 20px;
+}
+.container-logo span:nth-child(2){
+	width: 18px;
+	animation-delay: -0.4s;
+}
+.container-logo span:nth-child(3){
+	width: 22px;
+	animation-delay: -0.8s;
+}
+.container-logo span:nth-child(4){
+	width: 20px;
+	animation-delay: -1.2s;
+}
+.container-logo span:nth-child(5){
+	width: 17px;
+	animation-delay: -1.6s;
+}
+.container-logo span:nth-child(6){
+	width: 22px;
+	animation-delay: -2s;
+}
+@keyframes wave{
+	0%{
+		font-weight: 200;
+		transform: scale(1);
+		/*font-size: 0.9em;*/
+	}
+	100%{
+		font-weight: 800;
+		transform: scale(1.3);
+		/*font-size: 1em;*/
+	}
+}
+.container-navbar.open-about{
+	min-height: 100vh;
+	height: auto;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.container-about{
+	position: relative;
+}
+.container-about h2{ 
+	opacity: 1;
+	user-select: none;
+	transition: opacity 100ms;
+}
+.container-about:after, .container-about:before{
+	position: absolute;
+	content: '';
+	left: 50%;
+	top: 0;
+	width: 0px;
+	height: 100%;
+	background-color: white;
+	transform: rotate(0deg);
+	transition: width 100ms;
+	transition: transform 200ms 100ms;
+}
+.open-about .container-about:after{
+	transform: rotate(45deg);
+	width: 3px;
+}
+.open-about .container-about:before{
+	transform: rotate(-45deg);
+	width: 3px;
+}
+.open-about .container-about h2{ 
+	opacity: 0;
+}
+.container-menu-items{
+	display: flex;
+}
+.menu-item:not(:last-child){
+	margin-right: 15px;
+}
+.container-about{
+	cursor: pointer;
+}
+.content-about{
+	position: relative;
+	font-family: sans-serif;
+
+	line-height: 1.5em;
+	width: 650px;
+	max-width: 90%;
+	margin: 0 auto;
+	padding-top: 25px;
+	/*transform: translate(calc(50vw - 50%), calc(50vh - 50%));*/
+	left: 0;
+}
+.content-about p{
+	font-family: "Reason";
+	font-weight: 400;
+	font-size: 0.9em;
+}
+.content-about b{
+	font-weight: 700;
+}
+
+@media (max-width: 500px) {
+	.container-logo{
+		flex-basis: 50%;
+	}
+	.content-about{
+		max-width: 100%;
+	}
+	.content-about p{
+		font-size: 0.8em;
+	}
+}

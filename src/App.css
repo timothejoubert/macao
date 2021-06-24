@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+	font-family: "Monument";
+	src: url('./fonts/MonumentExtended-Black.ttf') format("truetype");
+	font-weight: 800;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+	font-family: "Anchos";
+	src: url('./fonts/AnchoGX.ttf') format("truetype");
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+	font-family: "Reason";
+	src: url('./fonts/NewReason-Regular.ttf') format("truetype");
+	font-weight: 400;
 }
-
-.App-link {
-  color: #61dafb;
+@font-face {
+	font-family: "Reason";
+	src: url('./fonts/NewReason-Medium.ttf') format("truetype");
+	font-weight: 500;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+	font-family: "Reason";
+	src: url('./fonts/NewReason-SemiBold.ttf') format("truetype");
+	font-weight: 600;
+}
+@font-face {
+	font-family: "Reason";
+	src: url('./fonts/NewReason-Bold.ttf') format("truetype");
+	font-weight: 700;
+}
+h1{
+	font-family: "Anchos";
+	text-transform: uppercase;
+	font-size: 0.9em;
+}
+h2{
+	font-size: 0.8em;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+body{
+	background-color: black;
+	font-family: "Monument";
+	color: white;
+}
+*::selection{
+	background-color: black;
+	color: white;
 }
