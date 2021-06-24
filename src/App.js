@@ -21,7 +21,7 @@ export default class App extends React.Component {
 
   calculateTimeLeft = () => {
     let year = new Date().getFullYear();
-    const difference = +new Date(`07/16/${year}`) - +new Date();
+    const difference = +new Date(`05/16/${year}`) - +new Date();
 
     let timeLeft;
     if (difference > 0) {
@@ -66,8 +66,8 @@ export default class App extends React.Component {
   render(){
     return ( 
       <>
-      <Navbar about={this.state.about} clickAbout={this.clickAbout}/>
-      <HeaderHome about={this.state.about} date={this.state.timeLeft} live={this.state.live}/>
+        <Navbar about={this.state.about} clickAbout={this.clickAbout}/>
+        <HeaderHome about={this.state.about} date={this.state.timeLeft} live={this.state.live}/>
       </>
     );
   }

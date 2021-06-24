@@ -57,12 +57,16 @@
 /* content live */ 
 .container-header-live{
 	position: relative;
-	width: 85%;
-	max-width: 750px;
+	
 }
 .container-header-live video{
 	width: 100%;
 	border-radius: 3px;
+}
+#twitch-embed {
+	border-radius: 50px;
+	background: #000000;
+	box-shadow: 20px 20px 60px #151515, -20px -20px 60px #2b2b2b;
 }
 .live-btn{
 	position: absolute;
@@ -74,6 +78,7 @@
 	color: white;
 	font-size: 0.8em;
 	text-transform: uppercase;
+	display:none;
 }
 .texture-bg-live{
 	position: absolute;
