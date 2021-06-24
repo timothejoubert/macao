@@ -86,9 +86,14 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	opacity: 0.08;
 	background-position: center;
 	background-size: cover;
+}
+.texture-bg-live.bg-grain{
+	opacity: 0.4;
+}
+.texture-bg-live.bg-capture{
+	opacity: 0.08;
 	filter: blur(4px);
 }
 @media (max-width: 500px) {

@@ -1,8 +1,7 @@
 import React, { useState, useEffect }  from "react";
 import './HeaderHome.css';
-
-
 import { TwitchEmbed, TwitchEmbedLayout } from "twitch-player";
+
 function HeaderHome(props) {
 
 	return (
@@ -67,8 +66,8 @@ function Live(props) {
 
 	return (
 		<>
-		<div className="texture-bg-live" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/grain-texture.png'})` }}></div>
-		<div className="texture-bg-live" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/Capture4.JPG'})` }}></div>
+		<div className="texture-bg-live bg-grain" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/grain-texture-compress.png'})` }}></div>
+		<div className="texture-bg-live bg-capture" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/Capture4.JPG'})` }}></div>
 		<div className="container-header-live" >
 			<div className="live-btn">Live</div>
 			<div id="twitch-embed"></div>

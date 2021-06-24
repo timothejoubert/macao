@@ -16,7 +16,10 @@
 	transition: all 400ms;
 }
 .container-logo{
-	flex-basis: 80%;
+	width: 130px;
+}
+.container-logo img{
+	width: 100%;
 }
 .container-logo h1{
 	display: flex;
@@ -67,6 +70,9 @@
 	min-height: 100vh;
 	height: auto;
 	background-color: rgba(0, 0, 0, 0.8);
+}
+.content-about-container{
+	width: 100%;
 }
 .container-about{
 	position: relative;
