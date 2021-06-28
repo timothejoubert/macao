@@ -21,7 +21,7 @@ export default class App extends React.Component {
 
   calculateTimeLeft = () => {
     let year = new Date().getFullYear();
-    const difference = +new Date(`05/16/${year}`) - +new Date();
+    const difference = +new Date(`06/10/${year}`) - +new Date();
 
     let timeLeft;
     if (difference > 0) {
