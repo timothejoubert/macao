@@ -37,7 +37,7 @@ h1{
 	text-transform: uppercase;
 	font-size: 0.9em;
 }
-h2{
+h2, a{
 	font-size: 0.8em;
 }
 li{
@@ -55,4 +55,54 @@ body{
 *::selection{
 	background-color: black;
 	color: white;
+}
+.content-about-container{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	width: 100%;
+	height: auto;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 2;
+}
+.display-content .content-about-container{
+	transform: translateY(-100%);
+	transition: transform 300ms ease-in-out;
+}
+.open-about~.content-about-container{
+	transform: translateY(0%);
+	transition: transform 300ms ease-in-out;
+}
+
+
+.content-about{
+	position: relative;
+	font-family: sans-serif;
+
+	line-height: 1.5em;
+	width: 650px;
+	max-width: 90%;
+	margin: 0 auto;
+	padding-top: 25px;
+	/*transform: translate(calc(50vw - 50%), calc(50vh - 50%));*/
+	left: 0;
+}
+.content-about p{
+	font-family: "Reason";
+	font-weight: 400;
+	font-size: 0.9em;
+}
+.content-about b{
+	font-weight: 700;
+}
+
+
+
+@media (max-width: 500px) {
+
+	.content-about p{
+		font-size: 0.8em;
+	}
 }
